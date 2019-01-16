@@ -22,7 +22,6 @@ Execute the run.sh file through the command:
 | SVDCNN 9 layers  |  90.13        |
 | SVDCNN 17 layers |  90.43        |
 | SVDCNN 29 layers |  90.55        |
-|                  |               |
 
 ### Yelp polarity
 | Model           | accuracy 
@@ -30,7 +29,6 @@ Execute the run.sh file through the command:
 | SVDCNN 9 layers  |  94.99        |
 | SVDCNN 17 layers |  95.04        |
 | SVDCNN 29 layers |  95.26        |
-|                  |               |
 
 ### Yelp review
 | Model           | accuracy 
@@ -38,4 +36,3 @@ Execute the run.sh file through the command:
 | SVDCNN 9 layers  |  61.97        |
 | SVDCNN 17 layers |  63.00        |
 | SVDCNN 29 layers |  63.20        |
-|                  |               |
