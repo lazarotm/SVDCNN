@@ -1,0 +1,11 @@
+ipython
+h5py
+numpy
+scikit-learn
+pandas
+scipy
+torch
+torchvision
+requests
+tensorboard_logger
+tqdm
