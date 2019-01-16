@@ -17,7 +17,7 @@ Execute the run.sh file through the command:
 ## Results:
 
 ### Ag news 
-| Model           | accuracy 
+| Model           | Accuracy 
 |:---------------:| :-------------:|
 | SVDCNN 9 layers  |  90.13        |
 | SVDCNN 17 layers |  90.43        |
@@ -36,3 +36,10 @@ Execute the run.sh file through the command:
 | SVDCNN 9 layers  |  61.97        |
 | SVDCNN 17 layers |  63.00        |
 | SVDCNN 29 layers |  63.20        |
+
+### Generic text classification problem with 4 target classes
+| Model           | Model Size (MB)
+|:---------------:| :-------------:|
+| SVDCNN 9 layers  |  2.80        |
+| SVDCNN 17 layers |  5.52        |
+| SVDCNN 29 layers |  6.03        |
