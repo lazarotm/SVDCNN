@@ -6,7 +6,7 @@ epochs=100
 lr=0.01
 lr_halve_interval=3
 gamma=0.9
-snapshot_interval=1
+snapshot_interval=3
 gpuid=0
 nthreads=4
  

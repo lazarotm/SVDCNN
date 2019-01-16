@@ -53,7 +53,7 @@ def get_args():
     parser.add_argument("--dataset", type=str, default='ag_news')
     parser.add_argument("--model_folder", type=str, default="models/svdcnn/ag_news")
     parser.add_argument("--data_folder", type=str, default="datasets/ag_news/svdcnn")
-    parser.add_argument("--depth", type=int, choices=[9, 17, 29, 49], default=9, help="Depth of the network tested in the paper (9, 17, 29, 49)")
+    parser.add_argument("--depth", type=int, choices=[9, 17, 29], default=9, help="Depth of the network tested in the paper (9, 17, 29)")
     parser.add_argument("--maxlen", type=int, default=1024)
     parser.add_argument("--shortcut", type=bool)
     parser.add_argument("--batch_size", type=int, default=128, help="number of example read by the gpu")
@@ -239,9 +239,7 @@ def train(epoch,net,dataset,device,msg="val/test",optimize=False,optimizer=None,
                 dic_metrics['lr'] = optimizer.state_dict()['param_groups'][0]['lr']
 
             pbar.update(1)
-            pbar.set_postfix(dic_metrics)
-        print(dic_metrics)
-            
+            pbar.set_postfix(dic_metrics)            
 
     if scheduler:
         scheduler.step()
