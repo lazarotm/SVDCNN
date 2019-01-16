@@ -1,4 +1,4 @@
-# Squeezed Very Deep Convolutional Networks (SVDCNN)
+# Squeezed Very Deep Convolutional Networks for Text Classification (SVDCNN)
 
 ## Datasets:
 | Dataset                | Classes | Train samples | Test samples | source |
@@ -16,30 +16,35 @@ Execute the run.sh file through the command:
 
 ## Results:
 
-### Ag news 
-| Model           | Accuracy 
-|:---------------:| :-------------:|
-| SVDCNN 9 layers  |  90.13        |
-| SVDCNN 17 layers |  90.43        |
-| SVDCNN 29 layers |  90.55        |
+### Model size in MB for a generic text classification problem with 4 target classes
 
-### Yelp polarity
-| Model           | accuracy 
-|:---------------:| :-------------:|
-| SVDCNN 9 layers  |  94.99        |
-| SVDCNN 17 layers |  95.04        |
-| SVDCNN 29 layers |  95.26        |
+| | SVDCNN | VDCNN | Char-CNN | 
+|:---------------:| :-------------:| :-------------:| :-------------:|
+| 6 layers | --- | --- | 43.25 |
+| 9 layers | 2.80 | 54.75 | --- |
+| 17 layers | 5.52 | 62.74 | --- |
+| 29 layers | 6.03 | 64.16 | --- |
 
-### Yelp review
-| Model           | accuracy 
-|:---------------:| :-------------:|
-| SVDCNN 9 layers  |  61.97        |
-| SVDCNN 17 layers |  63.00        |
-| SVDCNN 29 layers |  63.20        |
+### Ag news accuracy
+| | SVDCNN | VDCNN | Char-CNN | 
+|:---------------:| :-------------:| :-------------:| :-------------:|
+| 6 layers | --- | --- | 92.36 |
+| 9 layers | 90.13 | 90.83 | --- |
+| 17 layers | 90.43 | 91.12 | --- |
+| 29 layers | 90.55 | 91.27 | --- |
 
-### Generic text classification problem with 4 target classes
-| Model           | Model Size (MB)
-|:---------------:| :-------------:|
-| SVDCNN 9 layers  |  2.80        |
-| SVDCNN 17 layers |  5.52        |
-| SVDCNN 29 layers |  6.03        |
+### Yelp polarity accuracy
+| | SVDCNN | VDCNN | Char-CNN | 
+|:---------------:| :-------------:| :-------------:| :-------------:|
+| 6 layers | --- | --- | 95.64 |
+| 9 layers | 94.99 | 95.12 | --- |
+| 17 layers | 95.04 | 95.50 | --- |
+| 29 layers | 95.26 | 95.72 | --- |
+
+### Yelp review accuracy
+| | SVDCNN | VDCNN | Char-CNN | 
+|:---------------:| :-------------:| :-------------:| :-------------:|
+| 6 layers | --- | --- | 62.05 |
+| 9 layers | 61.97 | 63.27 | --- |
+| 17 layers | 63.00 | 63.93 | --- |
+| 29 layers | 63.20 | 64.26 | --- |
