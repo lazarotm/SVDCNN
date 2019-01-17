@@ -21,6 +21,11 @@ import torch.nn.functional as F
 
 from src.net import SVDCNN
 
+# multiprocessing workaround
+import resource
+rlimit = resource.getrlimit(resource.RLIMIT_NOFILE)
+resource.setrlimit(resource.RLIMIT_NOFILE, (2048, rlimit[1]))
+
 # Random seed
 np.random.seed(0)
 torch.manual_seed(0)
