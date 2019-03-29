@@ -1,6 +1,6 @@
 # Squeezed Very Deep Convolutional Networks for Text Classification (SVDCNN)
 
-A. D. Duque, L. L. Santos, D. Macêdo, C. Zanchettin, "Squeezed Very Deep Convolutional Networks for Text Classification", Submitted to IJCNN on 15 Jan, 2019.
+A. D. Duque, L. L. Santos, D. Macêdo, C. Zanchettin, "Squeezed Very Deep Convolutional Networks for Text Classification".
 
 
 ## Datasets:
